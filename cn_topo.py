@@ -5,6 +5,7 @@ class CN_OR_Topo(Topo):
 
         h1 = self.addHost('h1')
         h2 = self.addHost('h2')
+        h3 = self.addHost('h3')
 
         s1 = self.addSwitch('s1')
         s2 = self.addSwitch('s2')
@@ -21,5 +22,6 @@ class CN_OR_Topo(Topo):
         self.addLink(s4, s3)
 
         self.addLink(s3, h2)
+        self.addLink(s4, h3)
 
 topos = {'cn_or': CN_OR_Topo}
